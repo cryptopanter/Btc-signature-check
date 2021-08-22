@@ -5,3 +5,5 @@ How Bitcoin keys are generated is shown below.
 ![https://github.com/cryptopanter/Btc-signature-check/blob/main/msbt_0401.png](https://github.com/cryptopanter/Btc-signature-check/blob/main/msbt_0401.png)
 
 However, we have different type of Bitcoin addresses on Bitcoin network.So we need to detect the type at first to convert them into the right pubkey.
+
+Here you can convert your pubkey into Bitcoin address or vice versa: https://bitcointools.site/tool/address-to-hash
