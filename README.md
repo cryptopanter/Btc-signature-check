@@ -44,7 +44,9 @@ A P2SH address is created from a transaction script, which defines who can spend
 script hash = RIPEMD160(SHA256(script))
 
 Therefore Bitcoin addresses are generated as follows: 
-**"P2SH -> starts with 3" and
+
+**
+"P2SH -> starts with 3" and
 
 "P2PK -> starts with 1"**
 
