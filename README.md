@@ -36,3 +36,9 @@ more:  https://www.oreilly.com/library/view/mastering-bitcoin-2nd/9781491954379/
 
 
 As we know, **traditional bitcoin addresses begin with the number “1”** and are derived from the public key, which is derived from the private key. Although anyone can send bitcoin to a “1” address, that bitcoin can only be spent by presenting the corresponding private key signature and public key hash.
+
+**Bitcoin addresses that begin with the number “3”** are pay-to-script hash (P2SH) addresses, sometimes erroneously called multisignature or multisig addresses. They designate the beneficiary of a bitcoin transaction as the hash of a script, instead of the owner of a public key. The feature was introduced in January 2012 with BIP-16 (see Appendix C), and is being widely adopted because it provides the opportunity to add functionality to the address itself. Unlike transactions that “send” funds to traditional “1” bitcoin addresses, also known as a pay-to-public-key-hash (P2PKH), funds sent to “3” addresses require something more than the presentation of one public key hash and one private key signature as proof of ownership. The requirements are designated at the time the address is created, within the script, and all inputs to this address will be encumbered with the same requirements.
+
+A P2SH address is created from a transaction script, which defines who can spend a transaction output (for more details, see “Pay-to-Script-Hash (P2SH)”). Encoding a P2SH address involves using the same double-hash function as used during creation of a bitcoin address, only applied on the script instead of the public key:
+
+script hash = RIPEMD160(SHA256(script))
