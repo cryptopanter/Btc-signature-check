@@ -18,7 +18,7 @@ The **bitcoin address** is derived from the public key through the use of one-wa
 So for decompressing Bitcoin addresses : BASE58 decoded -> Hex uncompressed address
 and for compressing Bitcoin adresseses: HEX encoded -> BASE58 compressed address 
 
-**Public key formats**
+##Public key formats
 Public keys are also presented in different ways, usually as either compressed or uncompressed public keys.
 As we saw previously, the public key is a point on the elliptic curve consisting of a pair of coordinates (x,y). It is usually presented with the prefix 04 followed by two 256-bit numbers: one for the x coordinate of the point, the other for the y coordinate. The prefix 04 is used to distinguish uncompressed public keys from compressed public keys that begin with a 02 or a 03.
 
