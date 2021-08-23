@@ -44,5 +44,5 @@ A P2SH address is created from a transaction script, which defines who can spend
 script hash = RIPEMD160(SHA256(script))
 
 Therefore: 
-**P2SH -> starts with 3
+**P2SH -> starts with 3 and
 P2PK -> starts with 1**
