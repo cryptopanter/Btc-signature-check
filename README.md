@@ -46,7 +46,7 @@ script hash = RIPEMD160(SHA256(script))
 Therefore Bitcoin addresses are generated as follows: 
 
 
-1) **"P2SH -> starts with 3"**
+**1)"P2SH -> starts with 3"**
 
 **2) "P2PK -> starts with 1"**
 **3) "Bech32 -> starts with bc1"**
