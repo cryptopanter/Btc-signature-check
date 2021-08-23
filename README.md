@@ -15,3 +15,5 @@ Elliptic curve multiplication is a type of function that cryptographers call a �
 The **bitcoin address** is derived from the public key through the use of one-way cryptographic hashing. A “hashing algorithm” or simply “hash algorithm” is a one-way function. The algorithms used to make a bitcoin address from a public key are the Secure Hash Algorithm SHA256. Then again it goes through another Hash160 one-way function. And at the end, they are encoded in BASE58 to be more compact and easy-to-read (BASE58 is NOT one-way function).
 
 ![https://github.com/cryptopanter/Btc-signature-check/blob/main/Bitcoin%20address%20encoded.png](https://github.com/cryptopanter/Btc-signature-check/blob/main/Bitcoin%20address%20encoded.png)
+So for decompressing Bitcoin addresses : BASE58 decoded -> Hex uncompressed address
+and for compressing Bitcoin adresseses: HEX encoded -> BASE58 compressed address 
