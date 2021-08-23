@@ -42,3 +42,7 @@ As we know, **traditional bitcoin addresses begin with the number “1”** and 
 A P2SH address is created from a transaction script, which defines who can spend a transaction output (for more details, see “Pay-to-Script-Hash (P2SH)”). Encoding a P2SH address involves using the same double-hash function as used during creation of a bitcoin address, only applied on the script instead of the public key:
 
 script hash = RIPEMD160(SHA256(script))
+
+Therefore: 
+**P2SH -> starts with 3
+P2PK -> starts with 1**
