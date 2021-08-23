@@ -7,3 +7,5 @@ How Bitcoin keys are generated is shown below.
 However, we have different type of Bitcoin addresses on Bitcoin network.So we need to detect the type at first to convert them into the right pubkey.
 
 Here you can convert your pubkey into Bitcoin address or vice versa: https://bitcointools.site/tool/address-to-pubkey
+
+The public key can only be used to receive funds, and the private key is used to sign transactions to spend the funds.
