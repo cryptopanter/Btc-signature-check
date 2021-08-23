@@ -8,4 +8,4 @@ However, we have different type of Bitcoin addresses on Bitcoin network.So we ne
 
 Here you can convert your pubkey into Bitcoin address or vice versa: https://bitcointools.site/tool/address-to-pubkey
 
-The public key can only be used to receive funds, and the private key is used to sign transactions to spend the funds.
+The public key can only be used to receive funds, and the private key is used to sign transactions to spend the funds. There is a mathematical relationship between the public and the private key that allows the private key to be used to generate signatures on messages. This signature can be validated against the public key without revealing the private key.
