@@ -56,3 +56,5 @@ Therefore Bitcoin addresses are generated as follows:
 And Pub keys are generated as follows: 
 **"compressed -> starts with 02 or 03",
 "uncompressed -> starts with 04"**
+
+## Electrum Wallet
