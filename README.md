@@ -12,6 +12,6 @@ The public key can only be used to receive funds, and the private key is used to
 
 Elliptic curve multiplication is a type of function that cryptographers call a “trap door” function: it is easy to do in one direction (multiplication) and impossible to do in the reverse direction (division). (https://www.oreilly.com/library/view/mastering-bitcoin-2nd/9781491954379/ch04.html)
 
-The **bitcoin address** is derived from the public key through the use of one-way cryptographic hashing. A “hashing algorithm” or simply “hash algorithm” is a one-way function. The algorithms used to make a bitcoin address from a public key are the Secure Hash Algorithm SHA256
+The **bitcoin address** is derived from the public key through the use of one-way cryptographic hashing. A “hashing algorithm” or simply “hash algorithm” is a one-way function. The algorithms used to make a bitcoin address from a public key are the Secure Hash Algorithm SHA256. Then again it goes through another Hash160 one-way function. And at the end, they are encoded in BASE58 for more securities (BASE58 is NOT one-way function)
 
 ![https://github.com/cryptopanter/Btc-signature-check/blob/main/Bitcoin%20address%20encoded.png](https://github.com/cryptopanter/Btc-signature-check/blob/main/Bitcoin%20address%20encoded.png)
