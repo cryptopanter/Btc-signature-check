@@ -58,3 +58,5 @@ And Pub keys are generated as follows:
 "uncompressed -> starts with 04"**
 
 ## Electrum Wallet
+Your private keys need to be in Wallet Import Format (WIF), BASE58,  or mini private key format.  (https://en.bitcoin.it/wiki/Private_key#Base58_Wallet_Import_format)
+When importing or sweeping ECDSA private keys, a shorter format known as wallet import format is often used, which offers a few advantages. The wallet import format is **shorter**, and includes **built-in error checking codes** so that typos can be automatically detected and/or corrected (which is **impossible** in hex format) and type bits indicating how it is intended to be used. Wallet import format is the most common way to represent private keys in Bitcoin. For **private keys associated with uncompressed public** keys, they are 51 characters and always start with the number 5 on mainnet (9 on testnet). **Private keys associated with compressed public keys** are 52 characters and start with a capital L or K on mainnet (c on testnet). This is the same private key in (mainnet) wallet import format:
