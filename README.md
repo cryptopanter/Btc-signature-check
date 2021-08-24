@@ -67,5 +67,6 @@ When importing or sweeping ECDSA private keys, a shorter format known as wallet 
 
 ## appendix
 converting text to sha256: https://md5decrypt.net/en/Sha256/
+
 converting text to hex: https://www.rapidtables.com/convert/number/ascii-to-hex.html
 
