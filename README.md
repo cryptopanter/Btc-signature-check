@@ -64,12 +64,14 @@ When importing or sweeping ECDSA private keys, a shorter format known as wallet 
 **Note:** if the addresses in the originating wallet of the private keys begin with 3 you have to prepend “p2wpkh-p2sh:” to each private key before sweeping it. If the addresses begin with bc1 then you prepend “p2wpkh:”. Click on the info button to see examples.
 
 ## Clarity secp256k1 signature 
-The signature in the argument of secp256k1 needs to be encoded in DER algorithm and become a 64byte character. 
+The signature in the argument of secp256k1 needs to be in compact 64byte or recoverable signature form.
 More here: 
-https://bitcoin.stackexchange.com/questions/92680/what-are-the-der-signature-and-sec-format#:~:text=The%20Distinguished%20Encoding%20Rules%20(DER,numbers%20(r%2Cs)%20.
+
+https://github.com/bitcoin-core/secp256k1
 
 ## appendix
 converting text to sha256: https://md5decrypt.net/en/Sha256/
 
 converting text to hex: https://www.rapidtables.com/convert/number/ascii-to-hex.html
 
+C library for secp256k1 : https://github.com/bitcoin-core/secp256k1
